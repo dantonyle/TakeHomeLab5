@@ -6,6 +6,8 @@
 //  Copyright © 2016 Group7. All rights reserved.
 //
 
+/// This is a comment
+
 import UIKit
 
 class ItemsViewController: UITableViewController{
