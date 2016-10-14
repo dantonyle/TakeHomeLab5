@@ -10,11 +10,11 @@ import UIKit
 
 class ItemsViewController: UITableViewController{
     
-    var itemStore: ColleagueStore!
+    var colleagueStore: ColleagueStore!
     
     @IBAction func addNewItem(sender: AnyObject) {
         // create new item
-        let newItem = ColleagueStore.createColleague()
+        let newItem = colleagueStore.createColleague()
         
         // Figure out where that item is in the array
         if let index = itemStore.allItems.indexOf(newItem) {
@@ -56,7 +56,7 @@ class ItemsViewController: UITableViewController{
         tableView.estimatedRowHeight = 65    }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ColleagueStore.allItems.count
+        return ColleagueStore.allColleague.count
     }
     
     override func tableView(tableView: UITableView,
